@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameHub - Gaming Marketplace</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Header -->
+    <header class="bg-gray-800 py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-2xl font-bold text-purple-400">GameHub</h1>
+            <nav>
+                <a href="index.html" class="text-white hover:text-purple-400 mx-2">Home</a>
+                <a href="games.html" class="text-white hover:text-purple-400 mx-2">Games</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-purple-600 to-blue-600 py-20">
+        <div class="container mx-auto text-center px-4">
+            <h2 class="text-4xl font-bold mb-4">Discover Your Next Favorite Game</h2>
+            <p class="text-xl mb-8">Explore thousands of games across all platforms</p>
+            <div class="max-w-md mx-auto">
+                <input type="text" placeholder="Search games..." class="w-full px-4 py-2 rounded-lg text-black" id="search">
+                <button class="mt-4 bg-purple-700 hover:bg-purple-800 px-6 py-2 rounded-lg" onclick="searchGames()">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Games -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-8">Featured Games</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="featured-games">
+                <!-- Games will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Categories -->
+    <section class="bg-gray-800 py-16">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-8">Popular Categories</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-purple-600 p-4 rounded-lg text-center hover:bg-purple-700 cursor-pointer">Action</div>
+                <div class="bg-purple-600 p-4 rounded-lg text-center hover:bg-purple-700 cursor-pointer">Adventure</div>
+                <div class="bg-purple-600 p-4 rounded-lg text-center hover:bg-purple-700 cursor-pointer">RPG</div>
+                <div class="bg-purple-600 p-4 rounded-lg text-center hover:bg-purple-700 cursor-pointer">Strategy</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8">
+        <div class="container mx-auto text-center px-4">
+            <p>&copy; 2023 GameHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
