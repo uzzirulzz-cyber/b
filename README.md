@@ -1,4 +1,4 @@
-# GameHub - Gaming Marketplace
+# PLAYBEAT ARENA 
 
 A modern, responsive gaming marketplace website built with HTML, CSS, and JavaScript.
 
